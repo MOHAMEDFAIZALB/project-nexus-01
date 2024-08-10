@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(120deg, #03def1 0%, #f523ee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.auth-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Header Button Styles */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.form-header button {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #555;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.form-header button:hover {
+    color: #333;
+    border-bottom: 2px solid #fda085;
+}
+
+/* Form Content Styles */
+.form-content {
+    display: none;
+    flex-direction: column;
+}
+
+.form-content.active {
+    display: flex;
+}
+
+input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.8rem;
+    background: #f908f9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3448ff;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .auth-container {
+        width: 90%;
+    }
+}
